@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(196, 216, 196);
+}
+body .testbox {
+  display: flex;
+  flex-direction: column;
+}
+body .testbox h1 {
+  padding: 30px;
+}
+body .testbox .box1 {
+  padding: 10px;
+  width: 300px;
+  background-color: palevioletred;
+}
+body .testbox .box2 {
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */
