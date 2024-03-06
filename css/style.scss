@@ -1,0 +1,422 @@
+// Variables
+$basic-font: 10px;
+$basic-color: #fff;
+$basic-font-color: black;
+
+//Mixins
+@mixin defaultFont {
+    font-family: "Anta", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: $basic-font-color;
+}
+
+@mixin webFont {
+    font-size: $basic-font * 10;
+    color: $basic-color;
+    font-family: "Anta", sans-serif;
+}
+
+@mixin webFontNoto {
+    font-size: $basic-font * 10;
+    color: $basic-font-color;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+@mixin webFontRoboto() {
+    font-size: $basic-font;
+    color: $basic-color;
+    font-family: "Roboto", sans-serif;
+}
+
+@mixin webFontMont() {
+    font-size: $basic-font;
+    color: $basic-font-color;
+    font-family: "Montserrat", sans-serif;
+}
+
+@mixin webFontBebas($fsize, $fcolour) {
+    font-size: $fsize;
+    color: $fcolour;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+@mixin heading {
+    text-align: center;
+    font-weight: normal;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 4px;
+        background-color: rgb(255, 77, 109);
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+    }
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 0;
+    height: 0;
+    border-top: 100vh solid rgb(205, 205, 205);
+    border-left: 100vh solid transparent;
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        & > ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            background-color: white;
+            height: 10vh;
+            & > li {
+                list-style: none;
+                border: 2px solid black;
+                padding: 10px;
+                margin: 10px;
+                font-size: 1.2em;
+                font-weight: 700;
+                cursor: pointer;
+                @include heading();
+            }
+        }
+    }
+    .contents-wrapper {
+        border: 3px solid blue;
+        position: absolute;
+        z-index: 9;
+        top: 20vh;
+        left: 0;
+        .des {
+            border: 3px dotted red;
+            & > p {
+                @include defaultFont();
+                font-size: 5em;
+                & > span {
+                    font-style: italic;
+                    font-size: larger;
+                }
+                &:nth-child(5) {
+                    font-size: 6.5em;
+                }
+            }
+        }
+    }
+    .quote-korean {
+        position: absolute;
+        top: 60%;
+        left: 110%;
+        width: 100%;
+        padding-left: 2em;
+        opacity: 0;
+        transition: 0.5s;
+        & > p {
+            @include webFontNoto();
+            font-size: $basic-font * 3;
+            font-weight: 500;
+        }
+    }
+    .quote {
+        border: 3px dotted orange;
+        position: absolute;
+        top: 100%;
+        left: 110%;
+        width: 100%;
+        padding-left: 2em;
+        & > p {
+            @include webFontMont();
+            font-size: $basic-font * 3;
+            font-style: italic;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+    .quote:hover ~ .quote-korean {
+        opacity: 100;
+    }
+    .web-ex-wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        left: 0;
+        position: absolute;
+        @include webFont();
+        top: 100%;
+        .web1 {
+            background-color: rgb(255, 77, 109);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            position: relative;
+            & > img {
+                position: absolute;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s;
+                bottom: -50%;
+            }
+        }
+        .web1:hover img {
+            opacity: 100;
+            bottom: 0;
+        }
+        .web2 {
+            background-color: rgb(0, 175, 185);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            position: relative;
+            & > img {
+                position: absolute;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s;
+                bottom: -50%;
+            }
+        }
+        .web2:hover img {
+            opacity: 100;
+            bottom: 0;
+        }
+        .web3 {
+            background-color: rgb(240, 113, 103);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            position: relative;
+            & > img {
+                position: absolute;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s;
+                bottom: -50%;
+            }
+        }
+        .web3:hover img {
+            opacity: 100;
+            bottom: 0;
+        }
+    }
+    .landing-wrapper {
+        @include webFont();
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: absolute;
+        left: 0;
+        top: 200%;
+        width: 100vw;
+        height: 100vh;
+        cursor: pointer;
+        .landing1 {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to bottom,
+                rgb(180, 180, 180),
+                white
+            );
+        }
+        .landing2 {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to bottom,
+                rgb(180, 180, 180),
+                white
+            );
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+        .landing3 {
+            background-image: linear-gradient(
+                to bottom,
+                rgb(180, 180, 180),
+                white
+            );
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .banner-wrapper {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 300%;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        cursor: pointer;
+        .banner-box1 {
+            @include webFontBebas(10em, white);
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to bottom,
+                rgb(135, 135, 135),
+                white
+            );
+            overflow: hidden;
+            & > p {
+                text-align: end;
+            }
+            .banner-imgs-left {
+                position: relative;
+                height: 100%;
+                & > img {
+                    width: 900px;
+                }
+                & > img:nth-child(1) {
+                    position: absolute;
+                    top: 10%;
+                    right: 70%;
+                    transition: 0.7s;
+                }
+                & > img:nth-child(2) {
+                    position: absolute;
+                    top: 30%;
+                    right: 70%;
+                    transition: 0.7s;
+                }
+                & > img:nth-child(3) {
+                    position: absolute;
+                    top: 50%;
+                    right: 70%;
+                    transition: 0.7s;
+                }
+                & > img:hover {
+                    right: 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .banner-box2 {
+            @include webFontBebas(10em, black);
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to top,
+                rgb(135, 135, 135),
+                white
+            );
+            overflow: hidden;
+            .banner-imgs-right {
+                position: relative;
+                height: 100%;
+                // bottom: 0;
+                // left: 70%;
+                & > img {
+                    width: 900px;
+                }
+                & > img:nth-child(1) {
+                    float: right;
+                    position: absolute;
+                    top: 30%;
+                    left: 70%;
+                    transition: 0.7s;
+                }
+                & > img:nth-child(2) {
+                    float: right;
+                    width: 900px;
+                    position: absolute;
+                    top: 50%;
+                    left: 70%;
+                    transition: 0.7s;
+                }
+                & > img:hover {
+                    left: 0;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .slbanner-wrapper {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 400%;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        cursor: pointer;
+        .banner-box1 {
+            @include webFontBebas(10em, white);
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to bottom,
+                rgb(135, 135, 135),
+                white
+            );
+            overflow: hidden;
+            & > p {
+                text-align: end;
+            }
+            .sl-left {
+                & > img {
+                    transition: 0.5s;
+                    transform: scale(0.7);
+                }
+                & > img:hover {
+                    transform: scale(1);
+                }
+            }
+        }
+        .banner-box2 {
+            @include webFontBebas(10em, black);
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to top,
+                rgb(135, 135, 135),
+                white
+            );
+            overflow: hidden;
+            .sl-right {
+                & > img {
+                    transition: 0.5s;
+                    transform: scale(0.7);
+                }
+                & > img:hover {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
