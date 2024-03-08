@@ -105,6 +105,7 @@ body {
                 font-weight: 700;
                 cursor: pointer;
                 @include heading();
+                text-decoration: none;
                 & > a {
                     text-decoration: none;
                     color: $basic-font-color;
