@@ -27,10 +27,11 @@
   color: black;
   font-family: "Montserrat", sans-serif;
 }
-.works > p {
+.works > a > p {
   position: absolute;
   font-size: 7em;
   top: 70%;
   left: 30%;
   cursor: pointer;
+  color: black;
 }/*# sourceMappingURL=secondstyle.css.map */

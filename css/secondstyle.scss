@@ -69,11 +69,12 @@ body {
 
 .works {
     @include webFontMont();
-    & > p {
+    & > a > p {
         position: absolute;
         font-size: 7em;
         top: 70%;
         left: 30%;
         cursor: pointer;
+        color: $basic-font-color;
     }
 }
