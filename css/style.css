@@ -58,6 +58,10 @@ body nav > ul > li::before {
 body nav > ul > li:hover::before {
   width: 100%;
 }
+body nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
 body .contents-wrapper {
   position: absolute;
   z-index: 9;

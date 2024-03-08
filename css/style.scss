@@ -105,6 +105,10 @@ body {
                 font-weight: 700;
                 cursor: pointer;
                 @include heading();
+                & > a {
+                    text-decoration: none;
+                    color: $basic-font-color;
+                }
             }
         }
     }
