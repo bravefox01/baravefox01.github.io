@@ -1,0 +1,88 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+
+// Variables
+$basic-font: 10px;
+$basic-color: #fff;
+
+//Mixins
+@mixin crew {
+    border: 2px solid royalblue;
+    color: royalblue;
+    display: inline-block;
+    margin: 1em;
+    width: 6em;
+    text-align: center;
+    padding: 3px 20px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: $basic-font * 2;
+}
+
+.intro-contents {
+    // background-color: aquamarine;
+    .introduction {
+        // border: 3px solid red;
+        margin: 10vh;
+        h1 {
+            margin-bottom: 30px;
+        }
+    }
+    .crews {
+        // border: 3px solid blue;
+        margin: 10vh;
+        width: 100%;
+        & > h1 {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        & > h1::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            height: 2px;
+            width: 3em;
+        }
+        .crew {
+            @include crew;
+        }
+    }
+}
+
+.casting-wrapper {
+    .casting-title {
+        padding: 30px;
+    }
+    .casting-cont {
+        padding: 30px;
+        display: flex;
+        img {
+        }
+        .cast-des {
+            .cast-name {
+                padding: 10px;
+            }
+            .cast-cont {
+                padding: 20px;
+            }
+        }
+    }
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 768px) and (max-width: 1366px) {
+    body {
+        height: auto;
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+}

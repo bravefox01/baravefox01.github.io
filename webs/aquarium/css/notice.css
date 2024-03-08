@@ -1,0 +1,92 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.notice-wrapper .notice-board {
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: black;
+  background-color: #fff;
+  width: 70vw;
+  height: 1200px;
+}
+.notice-wrapper .notice-board h2 {
+  padding: 2em;
+  color: black;
+}
+.notice-wrapper .notice-board p {
+  color: black;
+}
+.notice-wrapper .notice-board .selection {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.notice-wrapper .notice-board .selection .right select {
+  color: black;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+}
+.notice-wrapper .notice-board .selection .right input[type=text] {
+  width: 200px;
+  height: 30px;
+}
+.notice-wrapper .notice-board .table1 {
+  padding: 2em;
+}
+.notice-wrapper .notice-board .table1 table {
+  width: 100%;
+  border-top: 1px solid #d3d3d3;
+  border-collapse: collapse;
+}
+.notice-wrapper .notice-board .table1 table th {
+  background-color: #d3d3d3;
+  border-top: 3px solid #727272;
+  padding: 10px;
+}
+.notice-wrapper .notice-board .table1 table th,
+.notice-wrapper .notice-board .table1 table td {
+  border-bottom: 2px solid #d3d3d3;
+  color: black;
+}
+.notice-wrapper .notice-board .table1 table td {
+  padding: 7px;
+  cursor: pointer;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  float: right;
+  margin: 0 1em;
+}
+
+input[type=button] {
+  margin: 0 0.5em;
+  padding: 0.5em 1.7em;
+  border: none;
+  background-color: #aaaaaa;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.list {
+  padding: 2em;
+}
+.list a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+}/*# sourceMappingURL=notice.css.map */

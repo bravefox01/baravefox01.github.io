@@ -1,0 +1,116 @@
+body {
+    color: aliceblue;
+    font-family: "Playfair Display", serif;
+}
+
+.x-menu {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[id="trigger"] {
+    display: none;
+}
+
+label[for="trigger"] {
+    width: 40px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+label[for="trigger"] span {
+    position: absolute;
+    height: 2px;
+    background-color: aliceblue;
+    width: 100%;
+    transition: 0.3s;
+}
+
+label[for="trigger"] span:nth-child(1) {
+    top: 0;
+}
+
+label[for="trigger"] span:nth-child(2) {
+    top: 50%;
+}
+
+label[for="trigger"] span:nth-child(3) {
+    top: 100%;
+}
+
+input[id="trigger"]:checked + label[for="trigger"] span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+input[id="trigger"]:checked + label[for="trigger"] span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="trigger"]:checked + label[for="trigger"] span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+/* +는 인접 선택자 */
+
+.sidebar {
+    background-color: #4c6f72;
+    margin-top: 10px;
+    width: 300px;
+    height: 800px;
+    position: fixed;
+    right: -300px;
+}
+
+/* ~는 형제 선택자 */
+input[id="trigger"]:checked ~ .sidebar {
+    right: 0;
+    transition: 0.3s;
+}
+
+input[id="trigger"]:checked + label[for="trigger"] {
+    right: 300px;
+    transition: 0.3s;
+}
+
+.side-menu {
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.side-menu:hover {
+    background-color: #96bbbe;
+}
+
+.body-contents {
+    margin: 30px;
+    border: 2px solid wheat;
+    padding: 20px;
+}
+
+.body-contents div {
+    text-align: end;
+    width: 350px;
+    left: 500px;
+    border: 1px solid wheat;
+    margin-left: 1000px;
+    padding: 50px;
+}
+
+.body-contents h1 {
+    margin: 10px;
+}
+
+.body-contents h2 {
+    margin: 10px;
+}
+
+.body-contents h3 {
+    margin: 10px;
+}

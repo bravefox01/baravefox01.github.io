@@ -59,14 +59,10 @@ body nav > ul > li:hover::before {
   width: 100%;
 }
 body .contents-wrapper {
-  border: 3px solid blue;
   position: absolute;
   z-index: 9;
   top: 20vh;
-  left: 0;
-}
-body .contents-wrapper .des {
-  border: 3px dotted red;
+  left: 10vw;
 }
 body .contents-wrapper .des > p {
   font-family: "Anta", sans-serif;
@@ -99,7 +95,6 @@ body .quote-korean > p {
   font-weight: 500;
 }
 body .quote {
-  border: 3px dotted orange;
   position: absolute;
   top: 100%;
   left: 110%;
@@ -193,7 +188,7 @@ body .web-ex-wrapper .web3:hover img {
   opacity: 100;
   bottom: 0;
 }
-body .landing-wrapper {
+body .webdes-wrapper {
   font-size: 100px;
   color: #fff;
   font-family: "Anta", sans-serif;
@@ -204,24 +199,44 @@ body .landing-wrapper {
   top: 200%;
   width: 100vw;
   height: 100vh;
-  cursor: pointer;
 }
-body .landing-wrapper .landing1 {
+body .webdes-wrapper img {
+  width: 90%;
+  cursor: pointer;
+  filter: grayscale(100%);
+  filter: blur(80%);
+  transition: 0.3s;
+}
+body .webdes-wrapper img:hover {
+  filter: grayscale(0);
+  filter: blur(0);
+  width: 100%;
+}
+body .webdes-wrapper .webdes1 {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to bottom, rgb(180, 180, 180), white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-body .landing-wrapper .landing2 {
+body .webdes-wrapper .webdes2 {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to bottom, rgb(180, 180, 180), white);
   border-left: 1px solid white;
   border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-body .landing-wrapper .landing3 {
+body .webdes-wrapper .webdes3 {
   background-image: linear-gradient(to bottom, rgb(180, 180, 180), white);
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 body .banner-wrapper {
   display: flex;
@@ -231,7 +246,6 @@ body .banner-wrapper {
   display: flex;
   width: 100vw;
   height: 100vh;
-  cursor: pointer;
 }
 body .banner-wrapper .banner-box1 {
   font-size: 10em;
@@ -272,7 +286,7 @@ body .banner-wrapper .banner-box1 .banner-imgs-left > img:nth-child(3) {
 }
 body .banner-wrapper .banner-box1 .banner-imgs-left > img:hover {
   right: 0;
-  margin-right: 10px;
+  margin-right: 5vw;
 }
 body .banner-wrapper .banner-box2 {
   font-size: 10em;
@@ -307,7 +321,7 @@ body .banner-wrapper .banner-box2 .banner-imgs-right > img:nth-child(2) {
 }
 body .banner-wrapper .banner-box2 .banner-imgs-right > img:hover {
   left: 0;
-  margin-left: 10px;
+  margin-left: 5vw;
 }
 body .slbanner-wrapper {
   display: flex;
@@ -317,7 +331,6 @@ body .slbanner-wrapper {
   display: flex;
   width: 100vw;
   height: 100vh;
-  cursor: pointer;
 }
 body .slbanner-wrapper .banner-box1 {
   font-size: 10em;
@@ -337,6 +350,22 @@ body .slbanner-wrapper .banner-box1 .sl-left > img {
 }
 body .slbanner-wrapper .banner-box1 .sl-left > img:hover {
   transform: scale(1);
+  z-index: 3;
+}
+body .slbanner-wrapper .banner-box1 .sl-left > img:nth-child(1) {
+  position: absolute;
+  right: 50%;
+  top: 20%;
+}
+body .slbanner-wrapper .banner-box1 .sl-left > img:nth-child(2) {
+  position: absolute;
+  right: 50%;
+  top: 45%;
+}
+body .slbanner-wrapper .banner-box1 .sl-left > img:nth-child(3) {
+  position: absolute;
+  right: 50%;
+  top: 70%;
 }
 body .slbanner-wrapper .banner-box2 {
   font-size: 10em;
@@ -353,4 +382,314 @@ body .slbanner-wrapper .banner-box2 .sl-right > img {
 }
 body .slbanner-wrapper .banner-box2 .sl-right > img:hover {
   transform: scale(1);
+}
+body .slbanner-wrapper .banner-box2 .sl-right > img:nth-child(1) {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+body .slbanner-wrapper .banner-box2 .sl-right > img:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.landing-wrapper {
+  position: absolute;
+  left: 0;
+  top: 500%;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.landing-wrapper .tri {
+  border-top: 100vh solid royalblue;
+  border-left: 100vh solid transparent;
+}
+.landing-wrapper .oriental {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.landing-wrapper .left-landing {
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  display: flex;
+}
+.landing-wrapper .left-landing > a > img {
+  width: 50vw;
+}
+.landing-wrapper .right-landing {
+  top: 0;
+  position: absolute;
+}
+.landing-wrapper .right-landing > a > img {
+  width: 50vw;
+}
+
+.detailpage-wrapper {
+  position: absolute;
+  left: 0;
+  top: 600%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+.detailpage-wrapper .opptri {
+  border-top: 100vh solid rgb(0, 174, 169);
+  border-right: 100vh solid transparent;
+  border-left: 50vw solid transparent;
+}
+.detailpage-wrapper .left-detail {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+}
+.detailpage-wrapper .left-detail > img {
+  height: 70vh;
+  margin: 2vh;
+  cursor: pointer;
+}
+.detailpage-wrapper .left-detail .detailimg-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.detailpage-wrapper .left-detail .detailimg-box > img {
+  width: 30vw;
+  margin: 2vh;
+}
+.detailpage-wrapper .right-detail {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.detailpage-wrapper .right-detail > a > img {
+  width: 35vw;
+  margin-bottom: 5vh;
+  margin-right: 10vh;
+}
+
+.card-news {
+  position: absolute;
+  left: 0;
+  top: 700%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+.card-news .cardnews-heading {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  font-size: 7em;
+  margin: 5vh;
+}
+.card-news .card-slide1 {
+  width: 52vh;
+  position: absolute;
+  top: 30vh;
+  margin-left: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.card-news .card-slide1 > div {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 50vh;
+  height: 50vh;
+}
+.card-news .card-slide1 > div .slide-img {
+  width: 100%;
+  height: 100%;
+}
+.card-news .card-slide2 {
+  width: 52vh;
+  position: absolute;
+  top: 30vh;
+  margin-left: 65vh;
+  display: flex;
+  justify-content: center;
+}
+.card-news .card-slide2 > div {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 50vh;
+  height: 50vh;
+}
+.card-news .card-slide2 > div .slide-img {
+  width: 100%;
+  height: 100%;
+}
+.card-news .card-slide3 {
+  width: 52vh;
+  position: absolute;
+  top: 30vh;
+  margin-left: 125vh;
+  display: flex;
+  justify-content: center;
+}
+.card-news .card-slide3 > div {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 50vh;
+  height: 50vh;
+}
+.card-news .card-slide3 > div .slide-img {
+  width: 100%;
+  height: 100%;
+}
+
+.etc-wrapper1 {
+  position: absolute;
+  left: 0;
+  top: 800%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+  padding: 30px;
+}
+.etc-wrapper1 .etc-heading {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  font-size: 7em;
+  margin-bottom: 30px;
+}
+.etc-wrapper1 img {
+  width: 50%;
+  object-fit: cover;
+}
+.etc-wrapper1 .design-container1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 80vh;
+}
+.etc-wrapper1 .design-container1 img {
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.etc-wrapper1 .design-container1 > div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(1) > img {
+  width: 30vh;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(2) > img {
+  width: 30vh;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(3) > img {
+  width: 30vh;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(4) > img {
+  width: 30vh;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 20vh;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(5) > img {
+  width: 30vh;
+  object-fit: cover;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(5) > img:nth-child(2) {
+  background-color: black;
+  width: 30vh;
+  object-fit: contain;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(6) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgb(12, 53, 82);
+  height: 23vh;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(6) > img {
+  width: inherit;
+  object-fit: cover;
+}
+.etc-wrapper1 .design-container1 > div:nth-child(6) > img:nth-child(2) {
+  width: inherit;
+  object-fit: cover;
+}
+
+.etc-wrapper2 {
+  position: absolute;
+  left: 0;
+  top: 900%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+  padding: 30px;
+}
+.etc-wrapper2 > p {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  font-size: 5em;
+}
+.etc-wrapper2 .design-container2 {
+  display: flex;
+}
+.etc-wrapper2 .design-container2 img {
+  height: 50vh;
+}
+.etc-wrapper2 .design-container2 .card {
+  background-color: #fff;
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+  height: 50vh;
+  margin-top: 20vh;
+  margin-right: 2vh;
+}
+
+.etc-wrapper3 {
+  position: absolute;
+  left: 0;
+  top: 1000%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+  padding: 30px;
+}
+.etc-wrapper3 > p {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  font-size: 5em;
+}
+.etc-wrapper3 .design-container3 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 20vh;
+}
+.etc-wrapper3 .design-container3 .card > img {
+  width: 30vh;
+  height: 30vh;
 }/*# sourceMappingURL=style.css.map */

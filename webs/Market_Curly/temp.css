@@ -1,0 +1,127 @@
+#bestSlider {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#bestSlider input[type="radio"] {
+    display: none;
+}
+
+#bestSlider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#bestList {
+    padding: 30px;
+    border: 3px solid #ccc;
+    position: relative;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#bestSlide1:checked ~ #bestList .inner {
+    margin-left: 0;
+}
+#bestSlide2:checked ~ #bestList .inner {
+    margin-left: -100%;
+}
+#bestSlide3:checked ~ #bestList .inner {
+    margin-left: -200%;
+}
+#bestSlide4:checked ~ #bestList .inner {
+    margin-left: -300%;
+}
+#bestSlide5:checked ~ #bestList .inner {
+    margin-left: -400%;
+}
+#bestSlide6:checked ~ #bestList .inner {
+    margin-left: -500%;
+}
+#bestSlide7:checked ~ #bestList .inner {
+    margin-left: -600%;
+}
+#bestSlide8:checked ~ #bestList .inner {
+    margin-left: -700%;
+}
+
+#bestList .inner {
+    transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
+    width: 400%;
+    line-height: 0;
+    height: 200px;
+}
+
+#bestList .bestSlide {
+    width: 25%;
+    float: left;
+    display: block;
+    height: 100%;
+}
+
+.bestSlide-content {
+    padding: 10px;
+}
+
+#controls {
+    margin: -130px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: 0.4;
+}
+
+#bestSlide1:checked ~ #controls label:nth-child(2),
+#bestSlide1:checked ~ #controls label:nth-child(3),
+#bestSlide1:checked ~ #controls label:nth-child(4),
+#bestSlide1:checked ~ #controls label:nth-child(5),
+#bestSlide1:checked ~ #controls label:nth-child(6),
+#bestSlide1:checked ~ #controls label:nth-child(7),
+#bestSlide1:checked ~ #controls label:nth-child(8),
+#bestSlide1:checked ~ #controls label:nth-child(1) {
+    background: url(images/right.svg) no-repeat;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+
+#bestSlide1:checked ~ #controls label:nth-last-child(2),
+#bestSlide1:checked ~ #controls label:nth-last-child(3),
+#bestSlide1:checked ~ #controls label:nth-last-child(4),
+#bestSlide1:checked ~ #controls label:nth-last-child(5),
+#bestSlide1:checked ~ #controls label:nth-last-child(6),
+#bestSlide1:checked ~ #controls label:nth-last-child(7),
+#bestSlide1:checked ~ #controls label:nth-last-child(8),
+#bestSlide1:checked ~ #controls label:nth-last-child(1) {
+    background: url(images/left.svg) no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 100px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 10px;
+}

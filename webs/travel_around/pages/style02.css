@@ -1,0 +1,66 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.intro-contents .introduction {
+  margin: 10vh;
+}
+.intro-contents .introduction h1 {
+  margin-bottom: 30px;
+}
+.intro-contents .crews {
+  margin: 10vh;
+  width: 100%;
+}
+.intro-contents .crews > h1 {
+  margin-bottom: 10px;
+  position: relative;
+}
+.intro-contents .crews > h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  height: 2px;
+  width: 3em;
+}
+.intro-contents .crews .crew {
+  border: 2px solid royalblue;
+  color: royalblue;
+  display: inline-block;
+  margin: 1em;
+  width: 6em;
+  text-align: center;
+  padding: 3px 20px;
+}
+
+.casting-wrapper .casting-title {
+  padding: 30px;
+}
+.casting-wrapper .casting-cont {
+  padding: 30px;
+  display: flex;
+}
+.casting-wrapper .casting-cont .cast-des .cast-name {
+  padding: 10px;
+}
+.casting-wrapper .casting-cont .cast-des .cast-cont {
+  padding: 20px;
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 768px) and (max-width: 1366px) {
+  body {
+    height: auto;
+  }
+}
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+}/*# sourceMappingURL=style02.css.map */

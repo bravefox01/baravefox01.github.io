@@ -5,6 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>YUNA LEE</title>
         <link rel="stylesheet" href="css/style.css" />
+        <!--jQuery CDN-->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"
+        ></script>
+        <!--slick-->
+        <link rel="stylesheet" href="slick/slick-theme.css" />
+        <link rel="stylesheet" href="slick/slick.css" />
+        <script src="slick/slick.js"></script>
     </head>
     <body>
         <nav>
@@ -41,23 +51,54 @@
 
         <div class="web-ex-wrapper">
             <div class="web1">
-                #01
-                <img src="imgs/iMac-Website-Mockup-1.jpg" />
+                <span>#01</span>
+                <img
+                    src="imgs/webss01.png"
+                    onclick="openPopup('/aquarium/aquarium.html')"
+                />
             </div>
             <div class="web2">
-                #02
-                <img src="imgs/iMac-Website-Mockup-1.jpg" />
+                <span>#02</span>
+                <img
+                    src="imgs/webss02.png"
+                    onclick="openPopup('/travel_around/travelaround.html')"
+                />
             </div>
             <div class="web3">
-                #03
-                <img src="imgs/iMac-Website-Mockup-1.jpg" />
+                <span>#03</span>
+                <img
+                    src="imgs/webss03.png"
+                    onclick="openPopup('/Market_Curly/wavy_index.html')"
+                />
             </div>
         </div>
 
-        <div class="landing-wrapper">
-            <div class="landing1">#04</div>
-            <div class="landing2">#05</div>
-            <div class="landing3">#06</div>
+        <div class="webdes-wrapper">
+            <div class="webdes1">
+                #04
+                <img
+                    src="imgs/webss05.png"
+                    onclick="openPopup('/Frisbee_website_v1/index.html')"
+                />
+            </div>
+            <div class="webdes2">
+                #05
+                <img
+                    src="imgs/webss06.png"
+                    onclick="openPopup('/Frisbee_web_v2/index.html')"
+                />
+            </div>
+            <div class="webdes3">
+                #06
+                <a
+                    href="https://www.figma.com/file/4bponzUKfpkjL5SQJ73tbE/Ray?type=design&node-id=0%3A1&mode=design&t=aFhdP2KthVsfNXLK-1"
+                    ><img src="imgs/webss04.png"
+                /></a>
+                <img
+                    src="imgs/webss07.png"
+                    onclick="openPopup('/Disney_CloneCoding/index.html')"
+                />
+            </div>
         </div>
 
         <div class="banner-wrapper">
@@ -95,6 +136,227 @@
                 </div>
             </div>
         </div>
-        <div class="totop"></div>
+
+        <div class="landing-wrapper">
+            <div class="tri"></div>
+            <div class="oriental">
+                <img src="imgs/003.png" />
+            </div>
+            <div class="left-landing">
+                <a href="ddrun.html"><img src="imgs/trans-landing01.png" /></a>
+            </div>
+            <div class="right-landing">
+                <a href="lego.html"><img src="imgs/trans-landing02.png" /></a>
+            </div>
+        </div>
+
+        <div class="detailpage-wrapper">
+            <div class="opptri"></div>
+            <div class="left-detail">
+                <div class="detailimg-box">
+                    <img src="imgs/ollie-02.png" />
+                    <img src="imgs/oliie-01.png" />
+                </div>
+                <img src="imgs/ollie.png" />
+            </div>
+            <div class="right-detail">
+                <a href="kumiho.html"><img src="imgs/kumiho01.png" /></a>
+            </div>
+        </div>
+
+        <div class="card-news">
+            <p class="cardnews-heading">SNS CARD NEWS</p>
+            <div class="card-slide1">
+                <div>
+                    <img src="imgs/tour01.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/tour02.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/tour03.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/tour04.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/tour05.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/tour06.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/tour07.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/tour08.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/tour09.png" class="slide-img" />
+                </div>
+            </div>
+            <div class="card-slide2">
+                <div>
+                    <img src="imgs/jeju001.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/jeju002.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/jeju003.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/jeju004.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/jeju005.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/jeju006.png" class="slide-img" />
+                </div>
+            </div>
+            <div class="card-slide3">
+                <div>
+                    <img src="imgs/cardnews01.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/night01.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/night02.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/night03.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/night04.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/cardnews02.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/eng01.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/eng02.png" class="slide-img" />
+                </div>
+                <div>
+                    <img src="imgs/eng03.png" class="slide-img" />
+                </div>
+            </div>
+        </div>
+
+        <div class="etc-wrapper1">
+            <p class="etc-heading">OTHER DESIGNS</p>
+            <div class="design-container1">
+                <div class="card-square">
+                    <img src="imgs/logo01.png" />
+                </div>
+                <div class="card-square">
+                    <img src="imgs/logo02.png" />
+                </div>
+                <div class="card-square">
+                    <img src="imgs/logo03.png" />
+                </div>
+                <div class="card-square">
+                    <img src="imgs/logo04.png" />
+                </div>
+                <div class="card-coex">
+                    <img src="imgs/001.png" />
+                    <img src="imgs/coex_logo-002.png" />
+                </div>
+                <div class="card-coex2">
+                    <img src="imgs/coex_logo.png" />
+                    <img src="imgs/coex_logo-004.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="etc-wrapper2">
+            <p>Abstract Designs</p>
+            <div class="design-container2">
+                <div class="card">
+                    <img src="imgs/abs01.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/abs02.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/abs03.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/abs04.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="etc-wrapper3">
+            <p>#SNS Advertisement Designs</p>
+            <div class="design-container3">
+                <div class="card">
+                    <img src="imgs/sns001.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns002.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns-003-1.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns003-2.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns003-3.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns003-4.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns004.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns005.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns006.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns007.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns007-2.png" />
+                </div>
+                <div class="card">
+                    <img src="imgs/sns008.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--slick slider-->
+        <script>
+            $(".card-slide1").slick({
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+            });
+            $(".card-slide2").slick({
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+            });
+            $(".card-slide3").slick({
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+            });
+
+            function openPopup(path) {
+                const rootPath = "./webs";
+                window.open(rootPath + path);
+            }
+        </script>
     </body>
 </html>

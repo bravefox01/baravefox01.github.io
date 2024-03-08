@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    background-color: #061d1f;
+}
+
+/* .left-logo {
+} */
+
+.left-logo img {
+    top: 0;
+    left: 0;
+    width: 35%;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+/* .nav-items {
+} */
+
+.nav-items a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Courier New", Courier, monospace;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.dropdown-submenu {
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    border: 1px solid wheat;
+    width: 150px;
+    box-shadow: 0 0 10px black;
+    margin: 10px;
+    background-color: #4c6f72;
+    align-items: center;
+    padding: 15px;
+}
+
+.dropdown-submenu a {
+    display: block;
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+}
+
+.dropdown-submenu a:hover {
+    display: block;
+    background-color: #96bbbe;
+    color: antiquewhite;
+}
+
+.nav-items:hover .dropdown-submenu {
+    display: block;
+}
+
+.right-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.search-box {
+    border: none;
+    width: 100px;
+    border-bottom: 2px solid wheat;
+    background: transparent;
+}
+
+.search-box:hover {
+    width: 180px;
+    border-bottom: 2px solid #4c6f72;
+    transition: 0.5s;
+}
+
+.searchbtn {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-image: url(images/paw-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #061d1f;
+}
+
+.log-in,
+.sign-up {
+    box-sizing: border-box;
+    width: 80px;
+    height: 30px;
+    margin: 0 10px;
+    color: antiquewhite;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    background-color: #4c6f72;
+    border-radius: 5px;
+}
+
+/* Trigger Button */
+input[id="trigger"] {
+    display: none;
+}
+
+label[for="trigger"] {
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* 요소 크기의 높이만큼 이동 해야 하니까 translateY */
+    transition: 0.3s;
+}
+
+label[for="trigger"] span {
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    transition: 0.4s;
+}
+label[for="trigger"] span:nth-child(1) {
+    top: 0;
+}
+label[for="trigger"] span:nth-child(2) {
+    top: 50%;
+}
+label[for="trigger"] span:nth-child(3) {
+    top: 100%;
+}
+
+input[id="trigger"]:checked + label[for="trigger"] span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+input[id="trigger"]:checked + label[for="trigger"] span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="trigger"]:checked + label[for="trigger"] span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.sidebar {
+    background-color: #486264;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    right: -300px;
+    transition: 0.3s;
+}
+
+/* sidebar는 인접이 아니라 형제요소라 +가 아닌 ~(형제선택자)를 씀 */
+input[id="trigger"]:checked ~ .sidebar {
+    right: 0;
+}
+
+input[id="trigger"]:checked + label[for="trigger"] {
+    right: 310px;
+}
+
+.side-menus {
+    display: flex;
+    justify-content: center;
+}
+
+.side-subs {
+    list-style: none;
+    display: block;
+    text-align: center;
+}
+
+.side-subs a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 80px;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-transform: capitalize;
+    color: antiquewhite;
+    background-color: #96bbbe;
+}
+
+.body-contents {
+    background-color: thistle;
+}
+
+.body-contents h1 {
+    /* border: 1px solid salmon; */
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 800;
+}
+
+.body-contents div {
+    /* border: 1px solid blue; */
+    text-align: right;
+    width: 300px;
+}
+
+.body-contents h2 {
+    /* border: 1px solid salmon; */
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 700;
+}
+
+.body-contents h3 {
+    /* border: 1px solid salmon; */
+}
+
+.body-contents p {
+    /* border: 1px solid white; */
+    margin: 10px;
+}
+
+.footerdiv {
+    width: 100%;
+    margin-top: auto;
+}
+
+#footer {
+    background-color: #486264;
+    width: 100%;
+    height: 120px;
+    padding-top: 30px;
+    color: antiquewhite;
+}
+
+.footer1 {
+    padding-left: 50px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+
+footer span {
+    padding-left: 50px;
+    opacity: 0.9;
+}

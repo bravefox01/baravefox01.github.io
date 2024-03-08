@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    background: #061d1f;
+}
+
+.navbar {
+    display: flex;
+    /* 부모요소에게 꼭 flex or inline-flex 지정 */
+    top: 0;
+    left: 0;
+    justify-content: flex-end;
+    align-items: center;
+    height: 150px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-items {
+    list-style: none;
+    margin-right: 30px;
+    display: block;
+}
+
+.nav-items:hover .dropdown-submenu {
+    display: block;
+}
+
+.dropdown-submenu {
+    display: none;
+    border: 1px solid white;
+    width: 150px;
+    box-shadow: 0 0 10px black;
+    margin: 10px;
+    position: absolute;
+    z-index: 9;
+    background-color: #4c6f72;
+}
+
+.dropdown-submenu a {
+    display: block;
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+}
+
+.dropdown-submenu a:hover {
+    display: block;
+    background-color: #96bbbe;
+    color: aliceblue;
+}
+
+.logo {
+    width: 200px;
+    flex-grow: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: antiquewhite;
+    opacity: 0.9;
+}
+
+a:hover {
+    color: #4c6f72;
+    display: block;
+}
+
+.right-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.search-box {
+    background-color: transparent;
+    width: 130px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    transition: 0.5s;
+}
+
+.search-box:hover {
+    width: 200px;
+    border-color: #4c6f72;
+}
+
+.searchbtn {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-image: url(images/paw-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #061d1f;
+}
+
+.log-in,
+.sign-up {
+    background-color: #4c6f72;
+    height: 30px;
+    width: 80px;
+    color: antiquewhite;
+    opacity: 0.9;
+    padding: 0 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* .carousel {
+    display: flex;
+} */
+
+.slider {
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position: relative;
+}
+
+.slideimage {
+    display: absolute;
+}
+
+.slide-contents {
+    color: antiquewhite;
+    position: absolute;
+}
+
+.slide-title {
+    margin-top: 520px;
+    margin-left: 30px;
+}
+
+.des {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 550px;
+}
+
+.main-text {
+    display: flex;
+    margin-left: 180px;
+    margin-right: 150px;
+}
+
+.textbox1,
+.textbox2,
+.textbox3 {
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+    padding-left: 70px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.txtbox1-title,
+.txtbox2-title,
+.txtbox3-title {
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.txtbox1-body,
+.txtbox2-body,
+.txtbox3-body {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.txtbox1-more,
+.txtbox2-more,
+.txtbox3-more {
+    font-size: 22px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+/* .main-textbox {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.title-bodytext {
+    box-sizing: border-box;
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.news {
+    box-sizing: border-box;
+    width: 300px;
+    height: 150px;
+    color: antiquewhite;
+    opacity: 0.9;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+    margin-left: 200px;
+}
+
+.join-club {
+    box-sizing: border-box;
+    width: 300px;
+    height: 150px;
+    color: antiquewhite;
+    opacity: 0.9;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.subscribe-magazine {
+    box-sizing: border-box;
+    width: 300px;
+    height: 150px;
+    color: antiquewhite;
+    opacity: 0.9;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+    margin-right: 300px;
+}
+
+.link-to {
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: 700;
+} */
+
+/* .space {
+    width: 100%;
+    height: 1000px;
+    bottom: 0;
+    display: contents;
+} */
+
+.footerdiv {
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+#footer {
+    background-color: #486264;
+    width: 100%;
+    height: 120px;
+    padding-top: 30px;
+    color: antiquewhite;
+}
+
+.footer1 {
+    padding-left: 50px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+
+span {
+    padding-left: 50px;
+    opacity: 0.9;
+}

@@ -1,0 +1,126 @@
+//Variables
+$basic-font: 14px;
+$basic-color: #fff;
+$basic-blue: #219ebc;
+$light-blue: #8ecae6;
+$bg-color: #023047;
+$point-color: #fb8500;
+$sub-point: #ffb703;
+
+//Mixins
+@mixin default {
+}
+
+@mixin menufont {
+    font-size: 22px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: black;
+}
+
+@mixin defaultfont($size) {
+    font-size: $size;
+    font-family: "Noto Sans KR", sans-serif;
+    color: black;
+    @content;
+}
+
+@mixin fontstyle {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.notice-wrapper {
+    .notice-board {
+        @include defaultfont(18px);
+        background-color: $basic-color;
+        width: 70vw;
+        height: 1200px;
+        h2 {
+            padding: 2em;
+            color: black;
+        }
+        p {
+            color: black;
+        }
+        .selection {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+            .right {
+                // background-color: sandybrown;
+                select {
+                    color: black;
+                    width: 100px;
+                    height: 30px;
+                    font-size: 16px;
+                }
+                input[type="text"] {
+                    width: 200px;
+                    height: 30px;
+                }
+            }
+        }
+        .table1 {
+            padding: 2em;
+            table {
+                width: 100%;
+                border-top: 1px solid #d3d3d3;
+                border-collapse: collapse;
+                th {
+                    background-color: #d3d3d3;
+                    border-top: 3px solid #727272;
+                    padding: 10px;
+                }
+                th,
+                td {
+                    border-bottom: 2px solid #d3d3d3;
+                    color: black;
+                }
+                td {
+                    padding: 7px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+
+.right {
+    float: right;
+    margin: 0 1em;
+}
+
+input[type="button"] {
+    margin: 0 0.5em;
+    padding: 0.5em 1.7em;
+    border: none;
+    background-color: #aaaaaa;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.list {
+    padding: 2em;
+    a {
+        text-decoration: none;
+        color: black;
+        opacity: 0.9;
+    }
+}

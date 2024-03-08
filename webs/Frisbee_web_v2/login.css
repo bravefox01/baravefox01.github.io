@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.log-in_container {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-top: 15vh;
+    margin-left: 40vw;
+    padding: 2em;
+}
+
+.login-title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 800;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.widget input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #4c6f72;
+    padding: 0.3em;
+}
+
+form button {
+    border: none;
+    padding: 0.5em;
+    background-color: #4c6f72;
+    border-radius: 3px;
+    color: aliceblue;
+    width: 100%;
+    cursor: pointer;
+}
+
+i {
+    font-size: 2em;
+}
+
+.sns-icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+}
+
+.youtube {
+    color: rgb(153, 65, 65);
+}
+
+.twitter {
+    color: rgb(74, 125, 201);
+}
+
+.github {
+    color: rgb(92, 123, 110);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    color: #4c6f72;
+    margin: 0 5px;
+}
