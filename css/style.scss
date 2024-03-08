@@ -512,7 +512,7 @@ body {
         left: 0;
         position: absolute;
         display: flex;
-        & > img {
+        & > a > img {
             height: 70vh;
             margin: 2vh;
             cursor: pointer;

@@ -447,7 +447,7 @@ body .slbanner-wrapper .banner-box2 .sl-right > img:nth-child(2) {
   position: absolute;
   display: flex;
 }
-.detailpage-wrapper .left-detail > img {
+.detailpage-wrapper .left-detail > a > img {
   height: 70vh;
   margin: 2vh;
   cursor: pointer;
