@@ -78,3 +78,13 @@ body {
         color: $basic-font-color;
     }
 }
+
+.cv-contents {
+    @include webFontNoto();
+    position: absolute;
+    top: 25vh;
+    left: 70vh;
+    p {
+        font-size: 20px;
+    }
+}

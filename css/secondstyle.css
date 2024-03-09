@@ -34,4 +34,16 @@
   left: 30%;
   cursor: pointer;
   color: black;
+}
+
+.cv-contents {
+  font-size: 100px;
+  color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  top: 25vh;
+  left: 70vh;
+}
+.cv-contents p {
+  font-size: 20px;
 }/*# sourceMappingURL=secondstyle.css.map */
