@@ -243,11 +243,13 @@ body .webdes-wrapper img {
   filter: grayscale(100%);
   filter: blur(80%);
   transition: 0.3s;
+  opacity: 80%;
 }
 body .webdes-wrapper img:hover {
   filter: grayscale(0);
   filter: blur(0);
   width: 100%;
+  opacity: 100%;
 }
 body .webdes-wrapper .webdes1 {
   width: 100%;
@@ -375,7 +377,7 @@ body .slbanner-wrapper .banner-box1 {
   font-family: "Bebas Neue", sans-serif;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgb(135, 135, 135), white);
+  background-image: url(../imgs/bg06.png);
   overflow: hidden;
 }
 body .slbanner-wrapper .banner-box1 > p {
@@ -410,7 +412,7 @@ body .slbanner-wrapper .banner-box2 {
   font-family: "Bebas Neue", sans-serif;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, rgb(135, 135, 135), white);
+  background-image: url(../imgs/bg04.png);
   overflow: hidden;
 }
 body .slbanner-wrapper .banner-box2 .sl-right > img {

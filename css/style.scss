@@ -284,11 +284,13 @@ body {
             filter: grayscale(100%);
             filter: blur(80%);
             transition: 0.3s;
+            opacity: 80%;
         }
         img:hover {
             filter: grayscale(0);
             filter: blur(0);
             width: 100%;
+            opacity: 100%;
         }
         .webdes1 {
             width: 100%;
@@ -420,11 +422,7 @@ body {
             @include webFontBebas(10em, white);
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(
-                to bottom,
-                rgb(135, 135, 135),
-                white
-            );
+            background-image: url(../imgs/bg06.png);
             overflow: hidden;
             & > p {
                 text-align: end;
@@ -459,11 +457,7 @@ body {
             @include webFontBebas(10em, black);
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(
-                to top,
-                rgb(135, 135, 135),
-                white
-            );
+            background-image: url(../imgs/bg04.png);
             overflow: hidden;
             .sl-right {
                 & > img {
