@@ -55,38 +55,53 @@ $basic-font-color: black;
 }
 
 body {
-}
-
-.body-contents {
-    @include webFontMont();
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60%;
-    left: 30%;
-    & > p {
-        font-size: 7em;
+    position: relative;
+    .works {
+        @include webFontMont();
+        & > a > p {
+            position: absolute;
+            font-size: 7em;
+            top: -50vh;
+            left: -40vw;
+            cursor: pointer;
+            color: $basic-font-color;
+        }
     }
-}
-
-.works {
-    @include webFontMont();
-    & > a > p {
+    .body-contents {
+        @include webFontMont();
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        font-size: 7em;
-        top: 70%;
-        left: 30%;
-        cursor: pointer;
-        color: $basic-font-color;
+        top: -60vh;
+        left: -30vw;
+        & > p {
+            font-size: 7em;
+        }
     }
-}
-
-.cv-contents {
-    @include webFontNoto();
-    position: absolute;
-    top: 25vh;
-    left: 70vh;
-    p {
-        font-size: 20px;
+    .cv-box {
+        @include webFontNoto();
+        position: absolute;
+        // border: 5px solid blue;
+        top: -70vh;
+        left: -45vw;
+        p {
+            font-size: 24px;
+            width: 50vw;
+            span {
+                font-size: 28px;
+                font-weight: 700;
+            }
+        }
+    }
+    .cv-contents {
+        @include webFontNoto();
+        position: absolute;
+        // border: 5px solid red;
+        top: -70vh;
+        left: 5vh;
+        p {
+            font-size: 18px;
+            width: 40vw;
+        }
     }
 }

@@ -10,42 +10,60 @@
   box-sizing: border-box;
 }
 
-.body-contents {
+body {
+  position: relative;
+}
+body .works {
+  font-size: 10px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+body .works > a > p {
+  position: absolute;
+  font-size: 7em;
+  top: -50vh;
+  left: -40vw;
+  cursor: pointer;
+  color: black;
+}
+body .body-contents {
   font-size: 10px;
   color: black;
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 60%;
-  left: 30%;
+  top: -60vh;
+  left: -30vw;
 }
-.body-contents > p {
+body .body-contents > p {
   font-size: 7em;
 }
-
-.works {
-  font-size: 10px;
-  color: black;
-  font-family: "Montserrat", sans-serif;
-}
-.works > a > p {
-  position: absolute;
-  font-size: 7em;
-  top: 70%;
-  left: 30%;
-  cursor: pointer;
-  color: black;
-}
-
-.cv-contents {
+body .cv-box {
   font-size: 100px;
   color: black;
   font-family: "Noto Sans KR", sans-serif;
   position: absolute;
-  top: 25vh;
-  left: 70vh;
+  top: -70vh;
+  left: -45vw;
 }
-.cv-contents p {
-  font-size: 20px;
+body .cv-box p {
+  font-size: 24px;
+  width: 50vw;
+}
+body .cv-box p span {
+  font-size: 28px;
+  font-weight: 700;
+}
+body .cv-contents {
+  font-size: 100px;
+  color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  top: -70vh;
+  left: 5vh;
+}
+body .cv-contents p {
+  font-size: 18px;
+  width: 40vw;
 }/*# sourceMappingURL=secondstyle.css.map */
