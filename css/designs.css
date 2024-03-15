@@ -1,0 +1,377 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+.designpage-des {
+  font-size: 100px;
+  color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  top: 25vh;
+  left: 30vh;
+}
+.designpage-des p {
+  font-size: 30px;
+}
+
+.landing-wrapper {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+.landing-wrapper .tri {
+  border-top: 100vh solid rgb(129, 166, 171);
+  border-left: 100vh solid transparent;
+}
+.landing-wrapper .oriental {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.landing-wrapper .left-landing {
+  bottom: 5vh;
+  left: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.landing-wrapper .left-landing > a > img {
+  width: 50vw;
+}
+.landing-wrapper .left-landing .ddrun-des > p > span {
+  font-size: 1.2em;
+}
+.landing-wrapper .right-landing {
+  top: 0;
+  position: absolute;
+}
+.landing-wrapper .right-landing > a > img {
+  width: 50vw;
+}
+.landing-wrapper .right-landing .lego-des > p {
+  text-align: right;
+}
+.landing-wrapper .right-landing .lego-des > p > span {
+  font-size: 1.2em;
+}
+
+.detailpage-wrapper {
+  position: absolute;
+  left: 0;
+  top: 200%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+.detailpage-wrapper .opptri {
+  border-top: 100vh solid rgb(129, 166, 171);
+  border-right: 100vh solid transparent;
+  border-left: 50vw solid transparent;
+}
+.detailpage-wrapper .detail-heading {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  font-size: 7em;
+  margin: 5vh;
+  background: transparent;
+}
+.detailpage-wrapper .left-detail {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+}
+.detailpage-wrapper .left-detail > a > img {
+  height: 70vh;
+  margin: 2vh;
+  cursor: pointer;
+}
+.detailpage-wrapper .left-detail .detailing-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.detailpage-wrapper .left-detail .detailing-box > img {
+  width: 30vw;
+  margin: 2vh;
+}
+.detailpage-wrapper .right-detail {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  margin-top: 4vh;
+  margin-right: 10vh;
+  align-items: end;
+}
+.detailpage-wrapper .right-detail .detail-des {
+  bottom: 0;
+  background-color: #eee;
+}
+.detailpage-wrapper .right-detail .detail-des > p {
+  font-size: 100px;
+  color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  padding-bottom: 10vh;
+  margin-left: 1vh;
+}
+.detailpage-wrapper .right-detail > a > img {
+  width: 30vw;
+  margin-bottom: 3vh;
+}
+
+.card-news {
+  position: absolute;
+  left: 0;
+  top: 300%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+.card-news .cardnews-heading {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  font-size: 7em;
+  margin: 5vh;
+}
+.card-news .card-slide1 {
+  width: 52vh;
+  position: absolute;
+  top: 30vh;
+  margin-left: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.card-news .card-slide1 > div {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 40vh;
+  height: 40vh;
+}
+.card-news .card-slide1 > div .slide-img {
+  width: 100%;
+  height: 100%;
+}
+.card-news .card-slide2 {
+  width: 52vh;
+  position: absolute;
+  top: 30vh;
+  margin-left: 65vh;
+  display: flex;
+  justify-content: center;
+}
+.card-news .card-slide2 > div {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 40vh;
+  height: 40vh;
+}
+.card-news .card-slide2 > div .slide-img {
+  width: 100%;
+  height: 100%;
+}
+.card-news .card-slide3 {
+  width: 52vh;
+  position: absolute;
+  top: 30vh;
+  margin-left: 125vh;
+  display: flex;
+  justify-content: center;
+}
+.card-news .card-slide3 > div {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 40vh;
+  height: 40vh;
+}
+.card-news .card-slide3 > div .slide-img {
+  width: 100%;
+  height: 100%;
+}
+
+.etc-wrapper3 {
+  position: absolute;
+  left: 0;
+  top: 400%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+.etc-wrapper3 > p {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  font-size: 5em;
+}
+.etc-wrapper3 .design-container3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 5vh;
+  margin-left: 5vh;
+  width: 90vw;
+}
+.etc-wrapper3 .design-container3 .card {
+  padding-bottom: 5vh;
+}
+.etc-wrapper3 .design-container3 .card > img {
+  width: 30vh;
+  height: 30vh;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+}
+.etc-wrapper3 .design-container3 .card > img:hover {
+  scale: 1.3;
+}
+
+.etc-wrapper1 {
+  position: absolute;
+  left: 0;
+  top: 500%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.etc-wrapper1 .logo-wrapper {
+  display: flex;
+}
+.etc-wrapper1 .etc-heading {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  font-size: 7em;
+  margin-bottom: 30px;
+}
+.etc-wrapper1 img {
+  width: 300px;
+}
+.etc-wrapper1 .logo-container1 {
+  height: inherit;
+  display: flex;
+}
+.etc-wrapper1 .logo-container1 .logo-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+}
+.etc-wrapper1 .logo-container1 .logo-img img {
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.etc-wrapper1 .logo-container1 .logo-des {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 3vh;
+  padding-bottom: 5vh;
+}
+.etc-wrapper1 .logo-container1 .logo-des p {
+  width: 100%;
+}
+.etc-wrapper1 .logo-container1 .logo-des span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.etc-wrapper1 .logo-container2 img {
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  margin: 2vh;
+}
+.etc-wrapper1 .logo-container2 img:nth-child(2) {
+  background-color: black;
+}
+.etc-wrapper1 .logo-container2 img:nth-child(3) {
+  background-color: rgb(99, 99, 99);
+}
+.etc-wrapper1 .logo-container2 .card-coex {
+  display: flex;
+  flex-direction: column;
+}
+.etc-wrapper1 .coex-des {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5vh;
+}
+.etc-wrapper1 .coex-des p {
+  font-size: 15px;
+}
+.etc-wrapper1 .coex-des p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.etc-wrapper2 {
+  position: absolute;
+  left: 0;
+  top: 600%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+  padding: 30px;
+}
+.etc-wrapper2 > p {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  font-size: 5em;
+}
+.etc-wrapper2 .design-container2 {
+  display: flex;
+  flex-direction: column;
+}
+.etc-wrapper2 .design-container2 img {
+  height: 50vh;
+}
+.etc-wrapper2 .design-container2 .abs-des {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+.etc-wrapper2 .design-container2 .abs-wrapper {
+  display: flex;
+}
+.etc-wrapper2 .design-container2 .abs-wrapper .card {
+  background-color: #fff;
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+  height: 50vh;
+  margin-right: 2vh;
+}
+
+.etc-wrapper3 {
+  position: absolute;
+  left: 0;
+  top: 700%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+  padding: 30px;
+}
+.etc-wrapper3 > p {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  font-size: 5em;
+}
+.etc-wrapper3 .ori-des {
+  margin-top: 5vh;
+}
+.etc-wrapper3 .img-box > img {
+  width: 20vw;
+  margin-top: 5vh;
+}/*# sourceMappingURL=designs.css.map */

@@ -121,7 +121,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 10vh;
         & > ul {
             display: flex;
@@ -129,6 +129,7 @@ body {
             align-items: flex-end;
             background-color: white;
             height: 10vh;
+            margin-right: 10vh;
             & > li {
                 list-style: none;
                 border: 2px solid black;
@@ -154,21 +155,21 @@ body {
         .des {
             & > p {
                 @include defaultFont();
-                font-size: 5em;
+                font-size: 4em;
                 & > span {
                     font-style: italic;
                     font-size: larger;
                 }
                 &:nth-child(5) {
-                    font-size: 6.5em;
+                    font-size: 4.5em;
                 }
             }
         }
     }
     .quote-korean {
         position: absolute;
-        top: 60%;
-        left: 110%;
+        top: 50%;
+        left: 120%;
         width: 100%;
         padding-left: 2em;
         opacity: 0;
@@ -182,7 +183,7 @@ body {
     .quote {
         position: absolute;
         top: 100%;
-        left: 110%;
+        left: 120%;
         width: 100%;
         padding-left: 2em;
         & > p {
@@ -203,23 +204,31 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         left: 0;
         position: absolute;
-        @include webFont();
         top: 100%;
         .web1 {
-            background-color: rgb(255, 77, 109);
+            // background-color: rgb(255, 77, 109);
+            background-color: rgb(200, 200, 200);
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            cursor: pointer;
             position: relative;
+            color: $basic-font-color;
+            & > span {
+                @include webFont();
+            }
             & > img {
+                cursor: pointer;
                 position: absolute;
                 width: 100%;
                 opacity: 0;
                 transition: 0.5s;
                 bottom: -50%;
+            }
+            .web-des {
+                position: absolute;
+                margin-top: 30vh;
             }
         }
         .web1:hover img {
@@ -227,20 +236,28 @@ body {
             bottom: 0;
         }
         .web2 {
-            background-color: rgb(0, 175, 185);
+            // background-color: rgb(0, 175, 185);
+            background-color: rgb(135, 135, 135);
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            cursor: pointer;
             position: relative;
+            & > span {
+                @include webFont();
+            }
             & > img {
+                cursor: pointer;
                 position: absolute;
                 width: 100%;
                 opacity: 0;
                 transition: 0.5s;
                 bottom: -50%;
+            }
+            .web-des {
+                position: absolute;
+                margin-top: 30vh;
             }
         }
         .web2:hover img {
@@ -248,20 +265,29 @@ body {
             bottom: 0;
         }
         .web3 {
-            background-color: rgb(240, 113, 103);
+            // background-color: rgb(240, 113, 103);
+            background-color: rgb(200, 200, 200);
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            cursor: pointer;
             position: relative;
+            color: $basic-font-color;
+            & > span {
+                @include webFont();
+            }
             & > img {
+                cursor: pointer;
                 position: absolute;
                 width: 100%;
                 opacity: 0;
                 transition: 0.5s;
                 bottom: -50%;
+            }
+            .web-des {
+                position: absolute;
+                margin-top: 30vh;
             }
         }
         .web3:hover img {
@@ -295,28 +321,91 @@ body {
         .webdes1 {
             width: 100%;
             height: 100%;
-            background-image: url(../imgs/bg01.png);
+            // background-image: url(../imgs/bg01.png);
+            background-image: linear-gradient(
+                to top,
+                rgb(135, 135, 135),
+                white
+            );
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            color: $basic-font-color;
+            .web-des {
+                @include webFontRoboto();
+                & > span {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $basic-font-color;
+                }
+                & > p {
+                    font-size: 18px;
+                    color: $basic-font-color;
+                }
+            }
         }
         .webdes2 {
             width: 100%;
             height: 100%;
-            background-image: url(../imgs/bg03.png);
+            // background-image: url(../imgs/bg03.png);
+            background-image: linear-gradient(
+                to bottom,
+                rgb(135, 135, 135),
+                white
+            );
             border-left: 1px solid white;
             border-right: 1px solid white;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            .web-des {
+                @include webFontRoboto();
+                // border: 5px dotted blue;
+                display: flex;
+                flex-direction: column;
+                span:first-child {
+                    // background-color: red;
+                    display: inline-block;
+                    text-align: right;
+                }
+                span:nth-of-type(2) {
+                    // background-color: red;
+                    text-align: end;
+                    display: inline-block;
+                }
+                p:nth-child(2) {
+                    text-align: right;
+                }
+                p:nth-of-type(2) {
+                    text-align: right;
+                }
+                & > span {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $basic-font-color;
+                }
+                & > p {
+                    font-size: 16px;
+                    color: $basic-font-color;
+                }
+            }
         }
         .webdes3 {
-            background-image: url(../imgs/bg02.png);
+            // background-image: url(../imgs/bg02.png);
+            background-image: linear-gradient(
+                to top,
+                rgb(135, 135, 135),
+                white
+            );
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            color: $basic-font-color;
+            .web-des {
+                @include webFontRoboto();
+            }
         }
     }
     .banner-wrapper {
@@ -331,11 +420,7 @@ body {
             @include webFontBebas(10em, white);
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(
-                to bottom,
-                rgb(135, 135, 135),
-                white
-            );
+            background-color: #bfbfbf;
             overflow: hidden;
             & > p {
                 text-align: end;
@@ -366,7 +451,7 @@ body {
                 }
                 & > img:hover {
                     right: 0;
-                    margin-right: 5vw;
+                    // margin-right: 5vw;
                 }
             }
         }
@@ -374,11 +459,7 @@ body {
             @include webFontBebas(10em, black);
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(
-                to top,
-                rgb(135, 135, 135),
-                white
-            );
+            background-color: #dddddd;
             overflow: hidden;
             .banner-imgs-right {
                 position: relative;
@@ -405,7 +486,7 @@ body {
                 }
                 & > img:hover {
                     left: 0;
-                    margin-left: 5vw;
+                    // margin-left: 5vw;
                 }
             }
         }
@@ -419,11 +500,11 @@ body {
         width: 100vw;
         height: 100vh;
         .banner-box1 {
-            @include webFontBebas(10em, white);
+            @include webFontBebas(10em, rgb(255, 255, 255));
             width: 100%;
             height: 100%;
-            background-image: url(../imgs/bg06.png);
             overflow: hidden;
+            background-color: #dddddd;
             & > p {
                 text-align: end;
             }
@@ -453,11 +534,12 @@ body {
                 }
             }
         }
+
         .banner-box2 {
             @include webFontBebas(10em, black);
             width: 100%;
             height: 100%;
-            background-image: url(../imgs/bg04.png);
+            background-color: #bfbfbf;
             overflow: hidden;
             .sl-right {
                 & > img {
@@ -477,308 +559,6 @@ body {
                     left: 50%;
                     top: 50%;
                 }
-            }
-        }
-    }
-}
-.landing-wrapper {
-    position: absolute;
-    left: 0;
-    top: 500%;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    .tri {
-        border-top: 100vh solid royalblue;
-        border-left: 100vh solid transparent;
-    }
-    .oriental {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .left-landing {
-        bottom: 0;
-        left: 50%;
-        position: absolute;
-        display: flex;
-        & > a > img {
-            width: 50vw;
-        }
-    }
-    .right-landing {
-        top: 0;
-        position: absolute;
-        & > a > img {
-            width: 50vw;
-        }
-    }
-}
-.detailpage-wrapper {
-    position: absolute;
-    left: 0;
-    top: 600%;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    .opptri {
-        border-top: 100vh solid rgb(0, 174, 169);
-        border-right: 100vh solid transparent;
-        border-left: 50vw solid transparent;
-    }
-    .left-detail {
-        // border: 5px solid red;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        display: flex;
-        & > a > img {
-            height: 70vh;
-            margin: 2vh;
-            cursor: pointer;
-        }
-        .detailimg-box {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            & > img {
-                width: 30vw;
-                margin: 2vh;
-            }
-        }
-    }
-    .right-detail {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        & > a > img {
-            width: 35vw;
-            margin-bottom: 5vh;
-            margin-right: 10vh;
-        }
-    }
-}
-.kumiho {
-}
-
-.card-news {
-    position: absolute;
-    left: 0;
-    top: 700%;
-    width: 100vw;
-    height: 100vh;
-    background-color: #eee;
-    .cardnews-heading {
-        @include defaultFont();
-        font-size: 7em;
-        margin: 5vh;
-    }
-    .card-slide1 {
-        // border: 5px solid salmon;
-        width: 52vh;
-        position: absolute;
-        top: 30vh;
-        margin-left: 5vh;
-        display: flex;
-        justify-content: center;
-        & > div {
-            // border: 3px solid blue;
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-                0 10px 10px rgba(0, 0, 0, 0.22);
-            width: 50vh;
-            height: 50vh;
-            .slide-img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-    .card-slide2 {
-        // border: 5px solid salmon;
-        width: 52vh;
-        position: absolute;
-        top: 30vh;
-        margin-left: 65vh;
-        display: flex;
-        justify-content: center;
-        & > div {
-            // border: 3px solid blue;
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-                0 10px 10px rgba(0, 0, 0, 0.22);
-            width: 50vh;
-            height: 50vh;
-            .slide-img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-    .card-slide3 {
-        // border: 5px solid salmon;
-        width: 52vh;
-        position: absolute;
-        top: 30vh;
-        margin-left: 125vh;
-        display: flex;
-        justify-content: center;
-        & > div {
-            // border: 3px solid blue;
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-                0 10px 10px rgba(0, 0, 0, 0.22);
-            width: 50vh;
-            height: 50vh;
-            .slide-img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-}
-
-.etc-wrapper1 {
-    position: absolute;
-    left: 0;
-    top: 800%;
-    width: 100vw;
-    height: 100vh;
-    background-color: #eee;
-    padding: 30px;
-    .etc-heading {
-        @include defaultFont();
-        font-size: 7em;
-        margin-bottom: 30px;
-    }
-    img {
-        width: 50%;
-        object-fit: cover;
-    }
-    .design-container1 {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        height: 80vh;
-        // grid-auto-rows: 1fr;
-        img {
-            box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
-        }
-        & > div:nth-child(1) {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            & > img {
-                width: 30vh;
-            }
-        }
-        & > div:nth-child(2) {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            & > img {
-                width: 30vh;
-            }
-        }
-        & > div:nth-child(3) {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            & > img {
-                width: 30vh;
-            }
-        }
-        & > div:nth-child(4) {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            & > img {
-                width: 30vh;
-            }
-        }
-        & > div:nth-child(5) {
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            height: 20vh;
-            & > img {
-                width: 30vh;
-                object-fit: cover;
-            }
-            & > img:nth-child(2) {
-                background-color: black;
-                width: 30vh;
-                object-fit: contain;
-            }
-        }
-        & > div:nth-child(6) {
-            grid-column-start: 4;
-            grid-column-end: 5;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            background-color: rgb(12, 53, 82);
-            height: 23vh;
-            & > img {
-                width: inherit;
-                object-fit: cover;
-            }
-            & > img:nth-child(2) {
-                width: inherit;
-                object-fit: cover;
-            }
-        }
-    }
-}
-
-.etc-wrapper2 {
-    position: absolute;
-    left: 0;
-    top: 900%;
-    width: 100vw;
-    height: 100vh;
-    background-color: #eee;
-    padding: 30px;
-
-    & > p {
-        @include defaultFont();
-        font-size: 5em;
-    }
-    .design-container2 {
-        display: flex;
-        img {
-            height: 50vh;
-        }
-        .card {
-            background-color: $basic-color;
-            box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
-            height: 50vh;
-            margin-top: 20vh;
-            margin-right: 2vh;
-        }
-    }
-}
-
-.etc-wrapper3 {
-    position: absolute;
-    left: 0;
-    top: 1000%;
-    width: 100vw;
-    height: 100vh;
-    background-color: #eee;
-    padding: 30px;
-    & > p {
-        @include defaultFont();
-        font-size: 5em;
-    }
-    .design-container3 {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        margin-top: 20vh;
-        .card {
-            & > img {
-                width: 30vh;
-                height: 30vh;
             }
         }
     }

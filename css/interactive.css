@@ -1,0 +1,122 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Tablet Breakpoint*/
+@media (min-width: 768px) and (max-width: 1366px) {
+  body {
+    width: 100vw;
+    border: none;
+  }
+  body nav {
+    width: 100vw;
+    display: flex;
+    height: 5vh;
+  }
+  body .contents-wrapper {
+    border: 3px solid salmon;
+    top: 15vh;
+  }
+  body .contents-wrapper .des > p {
+    font-family: "Anta", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: black;
+    font-size: 2em;
+  }
+  body .contents-wrapper .des > p > span {
+    font-style: italic;
+    font-size: larger;
+  }
+  body .contents-wrapper .des > p:nth-child(5) {
+    font-size: 2.5em;
+  }
+  body .contents-wrapper .quote-korean {
+    position: absolute;
+    top: 30%;
+    left: 110%;
+    width: 100%;
+    padding-left: 2em;
+  }
+  body .contents-wrapper .quote-korean > p {
+    font-size: 100px;
+    color: black;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  body .contents-wrapper .quote {
+    position: absolute;
+    top: 100%;
+    left: 110%;
+    width: 100%;
+    padding-left: 2em;
+  }
+  body .contents-wrapper .quote > p {
+    font-size: 10px;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  body .web-ex-wrapper .web1 > img {
+    opacity: 1;
+    bottom: 0;
+  }
+  body .web-ex-wrapper .web2 > img {
+    opacity: 1;
+    bottom: 0;
+  }
+  body .web-ex-wrapper .web3 > img {
+    opacity: 1;
+    bottom: 0;
+  }
+  body .webdes-wrapper img {
+    width: 100%;
+    cursor: pointer;
+    opacity: 100%;
+  }
+  body .banner-wrapper .banner-box1 .banner-imgs-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+.works > a > p {
+  font-size: 6em;
+  top: 20vh;
+  left: 20vh;
+  width: 40vw;
+}
+
+.cv-contents {
+  font-size: 100px;
+  color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  top: 15vh;
+  left: 20vh;
+}
+.cv-contents p {
+  font-size: 20px;
+}
+
+/*Mobile Breakpoint*/
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+    height: auto;
+  }
+}/*# sourceMappingURL=interactive.css.map */
