@@ -352,7 +352,7 @@
   margin-right: 2vh;
 }
 
-.etc-wrapper3 {
+.etc-wrapper5 {
   position: absolute;
   left: 0;
   top: 700%;
@@ -361,17 +361,17 @@
   background-color: #eee;
   padding: 30px;
 }
-.etc-wrapper3 > p {
+.etc-wrapper5 > p {
   font-family: "Anta", sans-serif;
   font-weight: 700;
   margin: 0;
   color: black;
   font-size: 5em;
 }
-.etc-wrapper3 .ori-des {
+.etc-wrapper5 .ori-des {
   margin-top: 5vh;
 }
-.etc-wrapper3 .img-box > img {
+.etc-wrapper5 .img-box > img {
   width: 20vw;
   margin-top: 5vh;
 }/*# sourceMappingURL=designs.css.map */
