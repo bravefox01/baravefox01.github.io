@@ -59,11 +59,13 @@ body {
 
 .body-contents {
     @include webFontMont();
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    left: 30%;
     & > p {
-        position: absolute;
         font-size: 7em;
-        top: 70%;
-        left: 30%;
     }
 }
 
