@@ -66,6 +66,11 @@ body {
             cursor: pointer;
             color: $basic-font-color;
         }
+        img {
+            position: absolute;
+            width: 40vw;
+            top: -70vh;
+        }
     }
     .body-contents {
         @include webFontMont();
@@ -73,16 +78,54 @@ body {
         flex-direction: column;
         position: absolute;
         top: -60vh;
-        left: -30vw;
+        left: -40vw;
         & > p {
             font-size: 7em;
         }
+    }
+    .contact-img {
+        position: absolute;
+        top: -70vh;
+        left: 10vh;
+    }
+    .cv-img {
+        position: absolute;
+        top: -85vh;
+        left: -40vw;
+        img {
+            width: 30vw;
+            // box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.5);
+        }
+        p:nth-child(2) {
+            @include webFontMont;
+            font-size: 4em;
+            font-weight: 700;
+            color: $basic-color;
+            position: absolute;
+            top: 30vh;
+            text-shadow: 3px 0 5px grey;
+        }
+        p:nth-child(3) {
+            @include webFontNoto;
+            font-size: 3em;
+            font-weight: 600;
+            color: $basic-color;
+            position: absolute;
+            top: 52vh;
+            text-shadow: 3px 0 5px grey;
+        }
+    }
+    .cv-bfbox {
+        position: absolute;
+        top: -70vh;
+        left: 10vh;
+        z-index: -5;
     }
     .cv-box {
         @include webFontNoto();
         position: absolute;
         // border: 5px solid blue;
-        top: -70vh;
+        top: 0;
         left: -45vw;
         p {
             font-size: 24px;
@@ -97,11 +140,12 @@ body {
         @include webFontNoto();
         position: absolute;
         // border: 5px solid red;
-        top: -70vh;
+        top: 0;
         left: 5vh;
         p {
             font-size: 18px;
             width: 40vw;
+            padding-bottom: 10vh;
         }
     }
 }

@@ -187,6 +187,7 @@ body .web-ex-wrapper .web1 .web-des {
   position: absolute;
   margin-top: 15vh;
   font-size: 17px;
+  padding: 2vh;
 }
 body .web-ex-wrapper .web1:hover img {
   opacity: 100;
@@ -218,6 +219,7 @@ body .web-ex-wrapper .web2 .web-des {
   position: absolute;
   margin-top: 15vh;
   font-size: 18px;
+  padding: 2vh;
 }
 body .web-ex-wrapper .web2:hover img {
   opacity: 100;
@@ -250,6 +252,7 @@ body .web-ex-wrapper .web3 .web-des {
   position: absolute;
   margin-top: 15vh;
   font-size: 18px;
+  padding: 2vh;
 }
 body .web-ex-wrapper .web3:hover img {
   opacity: 100;
