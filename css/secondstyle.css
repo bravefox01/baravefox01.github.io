@@ -171,4 +171,9 @@ body .illu-box .illu-img :nth-child(2) {
 body .illu-box .illu-img :nth-child(3) {
   width: 30%;
   height: 40%;
+}
+body .characterimg {
+  position: absolute;
+  top: 240vh;
+  left: -40vw;
 }/*# sourceMappingURL=secondstyle.css.map */
