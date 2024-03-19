@@ -136,4 +136,39 @@ body .character-box :nth-child(2) {
 }
 body .character-box :nth-child(3) {
   width: 110%;
+}
+body .illu-box {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 80vh;
+  left: -50vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+body .illu-box > h2 {
+  font-size: 10px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4em;
+  margin-bottom: 2em;
+}
+body .illu-box .illu-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .illu-box .illu-img > img {
+  aspect-ratio: auto;
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+  margin-right: 3em;
+  width: 30%;
+  margin-bottom: 1em;
+}
+body .illu-box .illu-img :nth-child(2) {
+  width: 45%;
+}
+body .illu-box .illu-img :nth-child(3) {
+  width: 30%;
+  height: 40%;
 }/*# sourceMappingURL=secondstyle.css.map */

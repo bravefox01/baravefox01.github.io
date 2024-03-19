@@ -171,4 +171,38 @@ body {
             width: 110%;
         }
     }
+    .illu-box {
+        position: absolute;
+        // border: 5px solid salmon;
+        width: 100vw;
+        height: 100vh;
+        top: 80vh;
+        left: -50vw;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        & > h2 {
+            @include webFontMont();
+            font-size: 4em;
+            margin-bottom: 2em;
+        }
+        .illu-img {
+            display: flex;
+            flex-wrap: wrap;
+            & > img {
+                aspect-ratio: auto;
+                box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+                margin-right: 3em;
+                width: 30%;
+                margin-bottom: 1em;
+            }
+            :nth-child(2) {
+                width: 45%;
+            }
+            :nth-child(3) {
+                width: 30%;
+                height: 40%;
+            }
+        }
+    }
 }
