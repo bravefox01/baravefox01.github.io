@@ -113,4 +113,27 @@ body .cv-contents p {
   font-size: 18px;
   width: 40vw;
   padding-bottom: 10vh;
+}
+body .star-box {
+  position: absolute;
+  top: -70vh;
+  left: -40vw;
+  display: flex;
+}
+body .star-box p {
+  font-size: 100px;
+  color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.8em;
+}
+body .character-box {
+  position: absolute;
+  top: -70vh;
+}
+body .character-box :nth-child(2) {
+  position: absolute;
+  left: -50vw;
+}
+body .character-box :nth-child(3) {
+  width: 110%;
 }/*# sourceMappingURL=secondstyle.css.map */

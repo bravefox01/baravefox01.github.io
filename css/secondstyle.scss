@@ -148,4 +148,27 @@ body {
             padding-bottom: 10vh;
         }
     }
+
+    .star-box {
+        position: absolute;
+        top: -70vh;
+        left: -40vw;
+        display: flex;
+        p {
+            @include webFontNoto();
+            font-size: 1.8em;
+        }
+    }
+    .character-box {
+        position: absolute;
+        top: -70vh;
+        :nth-child(2) {
+            // border: 3px solid red;
+            position: absolute;
+            left: -50vw;
+        }
+        :nth-child(3) {
+            width: 110%;
+        }
+    }
 }
